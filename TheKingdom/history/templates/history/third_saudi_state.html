@@ -1,0 +1,473 @@
+{% extends 'history/base.html' %}
+{% load static %}
+{% block body_class %}page-era{% endblock %}
+{% block title %}المملكة العربية السعودية — The Kingdom{% endblock %}
+{% block content %}
+
+<header class="text-center mb-4">
+  <h1 class="text-success fw-bold">المملكة العربية السعودية (الدولة السعودية الثالثة)</h1>
+  <p class="text-muted">من استعادة الرياض عام 1902م إلى إعلان المملكة 1932م ثم النهضة الحديثة في ظل رؤية 2030</p>
+</header>
+
+<img src="{% static 'history/images/eras/third-banner.jpg' %}" class="w-100 hero-img rounded-3 mb-4 shadow-sm" alt="المملكة العربية السعودية">
+
+<!-- نبذة عامة -->
+<section class="mb-5">
+  <h2 class="h5 fw-bold mb-2">تاريخ المملكة العربية السعودية</h2>
+  <p>
+    تاريخ المملكة العربية السعودية يرتبط بمنطقة شبه الجزيرة العربية، إذ تُشكّل المملكة الجزء الأكبر منها، 
+    وهي أبرز قوة وحضارة ونظام حكم مرَّ على المنطقة بعد الدولة النبوية والخلافة الراشدة، 
+    مما جعلها من أهم التحولات التاريخية التي شهدتها المنطقة العربية منذ قرون.
+  </p>
+  <p>
+    بدأ التاريخ الحديث للمملكة مع تأسيس <strong>الدرعية عام 850هـ / 1446م</strong> على يد 
+    <strong>مانع بن ربيعة المريدي</strong>، جدّ الأسرة المالكة آل سعود، واستمر هذا التأسيس حتى عهد 
+    <strong>الإمام محمد بن سعود</strong> الذي نقل الدرعية من مدينة إلى عاصمة للدولة السعودية الأولى عام 
+    <strong>1139هـ / 1727م</strong>.
+  </p>
+  <p>
+    وبعد انتهاء الدولة السعودية الأولى عام 1233هـ/1818م، قامت <strong>الدولة السعودية الثانية</strong> 
+    على يد الإمام <strong>تركي بن عبدالله</strong> عام 1240هـ/1824م، ثم عادت الدولة السعودية الثالثة 
+    على يد <strong>الملك عبدالعزيز بن عبدالرحمن</strong> باستعادة الرياض في 
+    <strong>5 شوال 1319هـ / 15 يناير 1902م</strong>.
+  </p>
+</section>
+
+<!-- توحيد المملكة -->
+<section class="mb-5">
+  <h2 class="h5 fw-bold mb-2">توحيد المملكة العربية السعودية</h2>
+  <p>
+    استغرق توحيد المملكة أكثر من ثلاثين عامًا، بدأه الملك عبدالعزيز عام 1319هـ/1902م حتى شمل جميع أقاليم البلاد. 
+    وفي <strong>17 جمادى الأولى 1351هـ / 19 سبتمبر 1932م</strong> صدر أمر ملكي بتوحيد البلاد وتسميتها 
+    <strong>المملكة العربية السعودية</strong>.
+  </p>
+  <p>
+    اختير يوم <strong>الخميس 21 جمادى الأولى 1351هـ / 23 سبتمبر 1932م</strong> يومًا لإعلان التوحيد، 
+    وهو اليوم الوطني الذي تحتفل به البلاد سنويًا. 
+    وفي عام <strong>2022م</strong> صدر أمر ملكي بتحديد يوم <strong>22 فبراير</strong> من كل عام يومًا لذكرى 
+    <strong>تأسيس الدولة السعودية</strong> على يد الإمام محمد بن سعود عام 1139هـ / 1727م.
+  </p>
+  <p>
+    حمل الملك عبدالعزيز ألقابًا متعددة خلال مسيرته، منها: <em>الإمام، وأمير نجد، وسلطان نجد وملحقاتها، 
+    وملك الحجاز ونجد</em>، حتى أصبح لقبه الرسمي <strong>ملك المملكة العربية السعودية</strong>.
+  </p>
+</section>
+
+<!-- ملوك المملكة العربية السعودية (تايم لاين) -->
+<section class="mb-5 timeline" aria-label="ملوك المملكة العربية السعودية">
+  <h2 class="timeline-title text-success">ملوك المملكة العربية السعودية</h2>
+
+  <div class="tl-list">
+
+    <!-- الملك عبدالعزيز -->
+    <article class="tl-item">
+      <div class="tl-item-inner">
+        <div class="card h-100 text-center">
+          <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover"
+                 src="{% static 'history/images/rulers/king-abdulaziz.jpg' %}"
+                 alt="الملك عبدالعزيز">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="fw-semibold">الملك عبدالعزيز بن عبدالرحمن آل سعود</div>
+            <div class="text-muted small mb-2">1902–1953</div>
+            <p class="small flex-grow-1">
+              مؤسس المملكة العربية السعودية الحديثة؛ وحّد الأقاليم تحت اسم واحد
+              وأرسى مؤسسات الحكم والإدارة الحديثة.
+            </p>
+            <a href="{% url 'ruler_abdulaziz' %}"
+               class="btn btn-success btn-sm mt-auto" target="_blank">
+              صفحة السيرة
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- الملك سعود -->
+    <article class="tl-item">
+      <div class="tl-item-inner">
+        <div class="card h-100 text-center">
+          <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover"
+                 src="{% static 'history/images/rulers/king-saud.jpg' %}"
+                 alt="الملك سعود">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="fw-semibold">الملك سعود بن عبدالعزيز</div>
+            <div class="text-muted small mb-2">1953–1964</div>
+            <p class="small flex-grow-1">
+              توسّع عمراني ملحوظ، وإنشاء جامعات ومستشفيات وتطوير للبنية الأساسية في عدد من المدن.
+            </p>
+            <a href="{% url 'ruler_saud' %}"
+               class="btn btn-success btn-sm mt-auto" target="_blank">
+              صفحة السيرة
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- الملك فيصل -->
+    <article class="tl-item">
+      <div class="tl-item-inner">
+        <div class="card h-100 text-center">
+          <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover"
+                 src="{% static 'history/images/rulers/king-faisal.jpg' %}"
+                 alt="الملك فيصل">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="fw-semibold">الملك فيصل بن عبدالعزيز</div>
+            <div class="text-muted small mb-2">1964–1975</div>
+            <p class="small flex-grow-1">
+              قاد إصلاحات كبرى في التعليم والإدارة والاقتصاد،
+              وعُرف بمواقفه البارزة في دعم القضايا العربية والإسلامية.
+            </p>
+            <a href="{% url 'ruler_faisal' %}"
+               class="btn btn-success btn-sm mt-auto" target="_blank">
+              صفحة السيرة
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- الملك خالد -->
+    <article class="tl-item">
+      <div class="tl-item-inner">
+        <div class="card h-100 text-center">
+          <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover"
+                 src="{% static 'history/images/rulers/king-khalid.jpg' %}"
+                 alt="الملك خالد">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="fw-semibold">الملك خالد بن عبدالعزيز</div>
+            <div class="text-muted small mb-2">1975–1982</div>
+            <p class="small flex-grow-1">
+              فترة ازدهار اقتصادي وطفرة عمرانية وخدمية نتيجة ارتفاع العوائد النفطية.
+            </p>
+            <a href="{% url 'ruler_khalid' %}"
+               class="btn btn-success btn-sm mt-auto" target="_blank">
+              صفحة السيرة
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- الملك فهد -->
+    <article class="tl-item">
+      <div class="tl-item-inner">
+        <div class="card h-100 text-center">
+          <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover"
+                 src="{% static 'history/images/rulers/king-fahd.jpg' %}"
+                 alt="الملك فهد">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="fw-semibold">الملك فهد بن عبدالعزيز</div>
+            <div class="text-muted small mb-2">1982–2005</div>
+            <p class="small flex-grow-1">
+              شهدت المملكة توسعات تاريخية للحرمين الشريفين،
+              وتطورًا كبيرًا في التعليم وشبكات الطرق والبنية التحتية.
+            </p>
+            <a href="{% url 'ruler_fahd' %}"
+               class="btn btn-success btn-sm mt-auto" target="_blank">
+              صفحة السيرة
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- الملك عبدالله -->
+    <article class="tl-item">
+      <div class="tl-item-inner">
+        <div class="card h-100 text-center">
+          <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover"
+                 src="{% static 'history/images/rulers/king-abdullah.jpg' %}"
+                 alt="الملك عبدالله">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="fw-semibold">الملك عبدالله بن عبدالعزيز</div>
+            <div class="text-muted small mb-2">2005–2015</div>
+            <p class="small flex-grow-1">
+              أطلق برامج الابتعاث الخارجي، وتوسّع في إنشاء الجامعات والمدن الاقتصادية
+              ومشروعات البنية التحتية.
+            </p>
+            <a href="{% url 'ruler_abdullah' %}"
+               class="btn btn-success btn-sm mt-auto" target="_blank">
+              صفحة السيرة
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- الملك سلمان -->
+    <article class="tl-item">
+      <div class="tl-item-inner">
+        <div class="card h-100 text-center">
+          <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover"
+                 src="{% static 'history/images/rulers/king-salman.jpg' %}"
+                 alt="الملك سلمان">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="fw-semibold">خادم الحرمين الشريفين الملك سلمان بن عبدالعزيز</div>
+            <div class="text-muted small mb-2">2015–حتى اليوم</div>
+            <p class="small flex-grow-1">
+              يقود تحولات تاريخية عبر <strong>رؤية المملكة 2030</strong>،
+              وتنويع الاقتصاد وتعزيز مكانة المملكة عالميًا.
+            </p>
+            <a href="{% url 'ruler_salman' %}"
+               class="btn btn-success btn-sm mt-auto" target="_blank">
+              صفحة السيرة
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+<!-- الأنظمة الإدارية -->
+<section class="mb-5">
+  <h2 class="h5 fw-bold mb-2">تشكيل الأنظمة والإدارة الحديثة</h2>
+  <p>
+    بدأ تشكّل الأنظمة الإدارية في المملكة مع تأسيس <strong>مجلس الوكلاء</strong> و<strong>مجلس الشورى</strong> 
+    وإدارة المقاطعات، إضافة إلى رئاسة القضاء والمحاكم الشرعية وعدد من الوزارات كـ 
+    <strong>الخارجية، المالية، الدفاع، الصحة، المواصلات، والداخلية</strong>.
+  </p>
+  <p>
+    كما أنشئت <strong>مؤسسة النقد العربي السعودي</strong> (البنك المركزي حاليًا) لإدارة العملة والسياسة النقدية، 
+    وتأسست إدارات متخصصة لتنظيم شؤون الحج وتوسعة الحرمين الشريفين، وإنشاء المحاجر الصحية والطرق.
+  </p>
+  <p>
+    في أواخر حياة الملك المؤسس، أُنشئ <strong>مجلس الوزراء</strong> كأعلى سلطة تنفيذية لتنظيم شؤون الدولة وإدارة مؤسساتها.
+  </p>
+</section>
+
+<!-- الاستقرار والتوطين -->
+<section class="mb-5">
+  <h2 class="h5 fw-bold mb-2">الاستقرار وتوطين المواطنين</h2>
+  <p>
+    سعت الحكومة منذ بداياتها إلى توطين المواطنين من القبائل الرحّل ضمن مشروع <strong>الهِجر</strong>، 
+    بهدف إنشاء مجتمعات مستقرة تزاول الزراعة والتجارة والحِرف، وتحويل القرى إلى حواضر متطورة.
+  </p>
+  <p>
+    تميّزت مسيرة التوحيد بمشاركة المواطنين طوعًا في الجيش وتجهيزهم الذاتي، 
+    إيمانًا منهم بمبدأ توحيد الجزيرة العربية تحت راية الدولة السعودية.
+  </p>
+</section>
+
+<!-- الازدهار والتعليم -->
+<section class="mb-5">
+  <h2 class="h5 fw-bold mb-2">الازدهار والتطور العلمي والثقافي</h2>
+  <p>
+    منذ عهد الملك عبدالعزيز، اعتنت المملكة بتطوير التعليم ونشر المعرفة، 
+    وأنشئت المدارس والمكتبات، وأُسست <strong>وزارة المعارف</strong> لاحقًا لتطوير التعليم الرسمي.
+  </p>
+  <p>
+    وُلد نظام التعليم الحديث، وتأسست <strong>جامعة الملك سعود</strong> كأول جامعة سعودية، 
+    وتوالى إنشاء الجامعات في مختلف المناطق. كما أُطلق <strong>برنامج خادم الحرمين الشريفين للابتعاث</strong> 
+    في عهد الملك عبدالله لتعزيز الكفاءات الوطنية.
+  </p>
+</section>
+
+<!-- السياسة والعلاقات الدولية -->
+<section class="mb-5">
+  <h2 class="h5 fw-bold mb-2">السياسة الخارجية والعلاقات الدولية</h2>
+  <p>
+    تميزت سياسة المملكة منذ عهد الملك عبدالعزيز بالاعتدال والاستقلال، 
+    واهتمت بقضايا <strong>العرب والمسلمين</strong> ودعمت استقلال الدول العربية والإسلامية.
+  </p>
+  <p>
+    انضمت المملكة إلى المنظمات الدولية الكبرى مثل <strong>هيئة الأمم المتحدة</strong> و<strong>جامعة الدول العربية</strong> عام 1945م، 
+    وأسهمت في دعم السلام العالمي والتعاون الدولي.
+  </p>
+</section>
+
+<!-- الاقتصاد والطاقة -->
+<section class="mb-5">
+  <h2 class="h5 fw-bold mb-2">الاقتصاد والطاقة</h2>
+  <p>
+    مثّل اكتشاف النفط بكميات تجارية عام <strong>1938م</strong> نقطة تحول كبرى في الاقتصاد الوطني. 
+    وأُسست شركة <strong>أرامكو السعودية</strong> لتطوير الصناعة النفطية، 
+    مما جعل المملكة من أكبر الدول المصدّرة للطاقة في العالم.
+  </p>
+  <p>
+    ومع مرور العقود، توسّعت الصناعات والخدمات، وشهدت المملكة نموًا سريعًا في مجالات 
+    <strong>التجارة، البنية التحتية، النقل، الاتصالات</strong>، 
+    وبدأت في تنويع الاقتصاد ضمن <strong>رؤية 2030</strong>.
+  </p>
+</section>
+
+<!-- الرموز الوطنية -->
+<section class="mb-5">
+  <h2 class="h5 fw-bold mb-3">الرموز الوطنية للمملكة</h2>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3">
+
+    <!-- العلم -->
+    <div class="col">
+      <div class="card h-100 text-center border-success">
+        <div class="ratio ratio-1x1">
+          <img src="{% static 'history/images/third_saudi/flag.jpg' %}" id ="flsg-card" class="card-img-top object-fit-cover" alt="علم المملكة العربية السعودية">
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="fw-semibold text-success">العلم السعودي</h5>
+          <p class="small flex-grow-1">يرمز إلى التوحيد والعدل بلونٍ أخضر وشهادة التوحيد وسيفٍ يدل على القوة والعزة.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- الشعار -->
+    <div class="col">
+      <div class="card h-100 text-center border-success">
+        <div class="ratio ratio-1x1">
+          <img src="{% static 'history/images/third_saudi/emblem.png' %}" class="card-img-top object-fit-cover" alt="شعار المملكة">
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="fw-semibold text-success">شعار الدولة</h5>
+          <p class="small flex-grow-1">سيفان متقاطعان تعلوهما نخلة ترمز إلى القوة والمنعة والازدهار.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- النشيد -->
+    <div class="col">
+      <div class="card h-100 text-center border-success">
+        <div class="ratio ratio-1x1">
+          <img src="{% static 'history/images/third_saudi/anthem.jpg' %}" class="card-img-top object-fit-cover" alt="النشيد الوطني">
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="fw-semibold text-success">النشيد الوطني</h5>
+          <p class="small flex-grow-1">كلماته لإبراهيم خفاجي وألحانه لطارق عبدالحكيم، يبدأ بـ “سارعي للمجد والعلياء”.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- اليوم الوطني -->
+    <div class="col">
+      <div class="card h-100 text-center border-success">
+        <div class="ratio ratio-1x1">
+          <img src="{% static 'history/images/third_saudi/national-day.jpg' %}" class="card-img-top object-fit-cover" alt="اليوم الوطني السعودي">
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="fw-semibold text-success">اليوم الوطني</h5>
+          <p class="small flex-grow-1">يوافق 23 سبتمبر من كل عام، تخليدًا لإعلان توحيد المملكة عام 1932م.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- مشاريع رؤية 2030 -->
+<section class="mb-5">
+  <h2 class="h5 fw-bold mb-3">مشاريع رؤية 2030</h2>
+  <p class="text-muted mb-4">
+    تمثل مشاريع رؤية المملكة 2030 نقلة نوعية في التنمية المستدامة، 
+    وتعكس طموح القيادة في تنويع الاقتصاد وتحقيق الازدهار البيئي والاجتماعي.
+  </p>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3">
+    
+    <!-- مشروع نيوم -->
+    <div class="col">
+      <div class="card h-100 text-center border-success">
+        <div class="ratio ratio-16x9">
+          <img src="{% static 'history/images/third_saudi/neom.jpg' %}" class="card-img-top object-fit-cover" alt="مشروع نيوم">
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="fw-semibold text-success">مشروع نيوم</h5>
+          <p class="small flex-grow-1">
+            مدينة مستقبلية على ساحل البحر الأحمر شمال غرب المملكة، 
+            تهدف إلى أن تكون نموذجًا عالميًا للذكاء الصناعي والتقنيات النظيفة والطاقة المستدامة.
+          </p>
+          <a href="https://www.neom.com/ar-sa" target="_blank" class="btn btn-outline-success btn-sm mt-auto">المزيد</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ذا لاين -->
+    <div class="col">
+      <div class="card h-100 text-center border-success">
+        <div class="ratio ratio-16x9">
+          <img src="{% static 'history/images/third_saudi/the-line.jpg' %}" class="card-img-top object-fit-cover" alt="ذا لاين">
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="fw-semibold text-success">ذا لاين</h5>
+          <p class="small flex-grow-1">
+            مدينة عمودية بطول 170 كم داخل نيوم، 
+            صممت لتكون خالية من السيارات والانبعاثات الكربونية وتعتمد على الطاقة المتجددة بنسبة 100%.
+          </p>
+          <a href="https://www.neom.com/ar-sa/regions/theline" target="_blank" class="btn btn-outline-success btn-sm mt-auto">المزيد</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- القدية -->
+    <div class="col">
+      <div class="card h-100 text-center border-success">
+        <div class="ratio ratio-16x9">
+          <img src="{% static 'history/images/third_saudi/qiddiya.jpg' %}" class="card-img-top object-fit-cover" alt="مشروع القدية">
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="fw-semibold text-success">مشروع القدية</h5>
+          <p class="small flex-grow-1">
+            وجهة ترفيهية ورياضية وثقافية متكاملة تقع قرب الرياض، 
+            تهدف إلى أن تكون عاصمة الترفيه في العالم ومركزًا للمواهب السعودية الشابة.
+          </p>
+          <a href="https://www.pif.gov.sa/ar/our-investments/giga-projects/qiddiya/" target="_blank" class="btn btn-outline-success btn-sm mt-auto">المزيد</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- البحر الأحمر -->
+    <div class="col">
+      <div class="card h-100 text-center border-success">
+        <div class="ratio ratio-16x9">
+          <img src="{% static 'history/images/third_saudi/redsea.jpg' %}" class="card-img-top object-fit-cover" alt="مشروع البحر الأحمر">
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="fw-semibold text-success">مشروع البحر الأحمر</h5>
+          <p class="small flex-grow-1">
+            مشروع سياحي ضخم يمتد على أكثر من 90 جزيرة بكر على الساحل الغربي، 
+            يركز على السياحة البيئية الفاخرة والحفاظ على الطبيعة البحرية.
+          </p>
+          <a href="https://www.pif.gov.sa/ar/our-investments/giga-projects/red-sea-global/" target="_blank" class="btn btn-outline-success btn-sm mt-auto">المزيد</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- وفاة المؤسس -->
+<section class="mb-5">
+  <h2 class="h5 fw-bold mb-2">وفاة المؤسس</h2>
+  <p>
+    توفي الملك <strong>عبدالعزيز بن عبدالرحمن آل سعود</strong> في 
+    <strong>2 ربيع الأول 1373هـ / 9 نوفمبر 1953م</strong> 
+    بعد أن أسس دولة موحدة أرست دعائم الحكم والنظام، 
+    واعتمدت شعارها وعلمها، لتبدأ بعدها مسيرة أبنائه الملوك في البناء والتطوير.
+  </p>
+</section>
+
+<!-- خاتمة -->
+<section class="mb-4">
+  <div class="alert alert-success text-center mb-0">
+    <strong>المملكة العربية السعودية</strong> تمثل اليوم نموذجًا عالميًا في التنمية والاستقرار، 
+    وتواصل مسيرتها نحو مستقبل أكثر ازدهارًا بقيادة خادم الحرمين الشريفين الملك سلمان بن عبدالعزيز 
+    وولي العهد الأمير محمد بن سلمان ضمن <strong>رؤية المملكة 2030</strong>.
+  </div>
+</section>
+
+{% endblock %}

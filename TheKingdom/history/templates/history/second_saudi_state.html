@@ -1,0 +1,310 @@
+{% extends 'history/base.html' %}
+{% load static %}
+
+{% block body_class %}page-era{% endblock %}
+{% block title %}الدولة السعودية الثانية — The Kingdom{% endblock %}
+
+{% block content %}
+
+<!-- بانر وعنوان -->
+<div class="text-center mb-4">
+  <h1 class="text-success fw-bold mb-1">الدولة السعودية الثانية</h1>
+  <div class="text-muted mb-3">(1240هـ/1824م – 1309هـ/1891م)</div>
+  <img src="{% static 'history/images/eras/second-banner.jpg' %}"
+       alt="الدولة السعودية الثانية"
+       class="img-fluid rounded-3 shadow-sm"
+       style="max-height:420px; object-fit:cover; width:100%;">
+</div>
+
+<!-- تمهيد -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">تمهيد</h2>
+  <p class="mb-2">
+    الدولة السعودية الثانية هي الدولة التي أسسها الإمام <strong>تركي بن عبدالله</strong> عام 1240هـ/1824م،
+    واتخذت <strong>الرياض</strong> عاصمةً لها بدلًا من الدرعية. امتد حكمها لنحو <strong>69 عامًا</strong>
+    (1240–1309هـ / 1824–1891م)، وتعاقب عليها أربعة من الأئمة من أسرة آل سعود،
+    أولهم الإمام تركي بن عبدالله حفيد مؤسس الدولة الأولى، وآخرهم الإمام
+    <strong>عبدالرحمن بن فيصل بن تركي</strong> والد الملك المؤسس عبدالعزيز بن عبدالرحمن آل سعود.
+  </p>
+  <p class="mb-0">
+    جاءت هذه الدولة امتدادًا طبيعيًا للدولة السعودية الأولى في <em>الرسالة والتقاليد وسلالة الحكم</em>،
+    واعتمدت في بسط سلطانها على الأسس الإدارية والقضائية والمالية التي ورثتها عن سابقتها،
+    مع إعادة بناء المركز السياسي في الرياض وتوحيد الأقاليم تدريجيًا بعد مرحلة من الاضطراب.
+  </p>
+</section>
+
+<!-- حكّام الدولة السعودية الثانية (تايم لاين) -->
+<section class="mb-4 timeline" aria-label="أئمة الدولة السعودية الثانية">
+  <h2 class="timeline-title text-success">حكام الدولة السعودية الثانية</h2>
+
+  <div class="tl-list">
+
+    <!-- الإمام تركي بن عبدالله -->
+    <article class="tl-item">
+      <div class="tl-item-inner">
+        <div class="card h-100 text-center">
+          <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover"
+                 src="{% static 'history/images/rulers/turki-bin-abdullah.jpg' %}"
+                 alt="الإمام تركي بن عبدالله">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="fw-semibold">الإمام تركي بن عبدالله</div>
+            <div class="text-muted small mb-2">1240–1249هـ / 1824–1834م</div>
+            <p class="small flex-grow-1">
+              مؤسس الدولة السعودية الثانية وأول من اتخذ الرياض عاصمة للحكم.
+            </p>
+            <a href="{% url 'ruler_turki_bin_abdullah' %}"
+               class="btn btn-success btn-sm mt-auto" target="_blank">
+              صفحة السيرة
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- الإمام فيصل بن تركي -->
+    <article class="tl-item">
+      <div class="tl-item-inner">
+        <div class="card h-100 text-center">
+          <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover"
+                 src="{% static 'history/images/rulers/faisal-bin-turki.jpg' %}"
+                 alt="الإمام فيصل بن تركي">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="fw-semibold">الإمام فيصل بن تركي</div>
+            <div class="text-muted small mb-2">1250–1254هـ و1259–1282هـ / 1834–1865م</div>
+            <p class="small flex-grow-1">
+              أعاد بناء قوة الدولة، وحقق استقرارًا نسبيًا، وحافظ على امتداد نفوذها في نجد والأحساء.
+            </p>
+            <a href="{% url 'ruler_faisal_bin_turki' %}"
+               class="btn btn-success btn-sm mt-auto" target="_blank">
+              صفحة السيرة
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- الإمام عبدالله بن فيصل -->
+    <article class="tl-item">
+      <div class="tl-item-inner">
+        <div class="card h-100 text-center">
+          <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover"
+                 src="{% static 'history/images/rulers/abdullah-bin-faisal.jpg' %}"
+                 alt="الإمام عبدالله بن فيصل">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="fw-semibold">الإمام عبدالله بن فيصل</div>
+            <div class="text-muted small mb-2">1282–1305هـ / 1865–1878م</div>
+            <p class="small flex-grow-1">
+              واجه صراعات داخلية وتدخلات خارجية أضعفت مركز الدولة ومهّدت لتراجعها.
+            </p>
+            <a href="{% url 'ruler_abdullah_bin_faisal' %}"
+               class="btn btn-success btn-sm mt-auto" target="_blank">
+              صفحة السيرة
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- الإمام سعود بن فيصل -->
+    <article class="tl-item">
+      <div class="tl-item-inner">
+        <div class="card h-100 text-center">
+          <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover"
+                 src="{% static 'history/images/rulers/saud-bin-faisal.jpg' %}"
+                 alt="الإمام سعود بن فيصل">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="fw-semibold">الإمام سعود بن فيصل</div>
+            <div class="text-muted small mb-2">1288–1291هـ / 1871–1875م</div>
+            <p class="small flex-grow-1">
+              حاول إعادة التوازن بين الأقاليم، لكن الصراع على القيادة استمر في عهده.
+            </p>
+            <a href="{% url 'ruler_saud_bin_faisal' %}"
+               class="btn btn-success btn-sm mt-auto" target="_blank">
+              صفحة السيرة
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- الإمام عبدالرحمن بن فيصل -->
+    <article class="tl-item">
+      <div class="tl-item-inner">
+        <div class="card h-100 text-center">
+          <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover"
+                 src="{% static 'history/images/rulers/abdulrahman-bin-faisal.jpg' %}"
+                 alt="الإمام عبدالرحمن بن فيصل">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="fw-semibold">الإمام عبدالرحمن بن فيصل</div>
+            <div class="text-muted small mb-2">1307–1309هـ / 1889–1891م</div>
+            <p class="small flex-grow-1">
+              آخر حكام الدولة السعودية الثانية ووالد الملك المؤسس عبدالعزيز؛
+              انتهى حكمه بسقوط الرياض ثم بدأت مرحلة الهجرة والعودة.
+            </p>
+            <a href="{% url 'ruler_abdulrahman_bin_faisal' %}"
+               class="btn btn-success btn-sm mt-auto" target="_blank">
+              صفحة السيرة
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+<!-- خصائص الدولة وإدارتها -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">خصائص الدولة وإدارتها</h2>
+  <ul class="list-group">
+    <li class="list-group-item">العاصمة: <strong>الرياض</strong> (نقل المركز من الدرعية وتعميرها كمقر للحكم).</li>
+    <li class="list-group-item">استمرار النهج الإداري والقضائي والمالي الموروث عن الدولة الأولى، مع تكييفه لواقع الأقاليم.</li>
+    <li class="list-group-item">تعزيز الأمن وطرق القوافل، وتنظيم العلاقة مع القبائل بالولاء والعطاء والوساطة.</li>
+    <li class="list-group-item">توسّع تدريجي أعاد إدماج المناطق التي حاولت الحكم الذاتي بعد سقوط الدولة الأولى.</li>
+  </ul>
+</section>
+
+<!-- الحدود والامتداد -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">حدود الدولة السعودية الثانية</h2>
+  <p class="mb-0">
+    استفاد الإمام تركي بن عبدالله من إرث الدولة الأولى وولاء القبائل والحواضر،
+    فامتد نطاق الدولة من <strong>وادي السرحان شمالًا</strong> إلى <strong>نجران جنوبًا</strong>،
+    ومن <strong>حدود الحجاز غربًا</strong> إلى <strong>الخليج العربي وبحر عمان شرقًا</strong>.
+  </p>
+</section>
+
+<!-- مسار الأحداث بإيجاز زمني -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">محطات زمنية مختصرة</h2>
+  <div class="list-group">
+    <div class="list-group-item">
+      <strong>1240هـ/1824م:</strong> تركي بن عبدالله يستعيد الرياض ويعلن قيام الدولة الثانية.
+    </div>
+    <div class="list-group-item">
+      <strong>1250–1254هـ & 1259–1282هـ:</strong> حكما الإمام فيصل بن تركي؛ ترسيخ الإدارة والتوازنات الإقليمية.
+    </div>
+    <div class="list-group-item">
+      <strong>1282–1291هـ:</strong> تعاقب عبدالله ثم سعود بن فيصل وسط تنافس داخلي وتدخلات خارجية.
+    </div>
+    <div class="list-group-item">
+      <strong>1291–1293هـ ثم 1307–1309هـ:</strong> فترتا حكم عبدالرحمن بن فيصل وتنتهي الدولة عام 1309هـ/1891م.
+    </div>
+  </div>
+</section>
+
+<!-- الاقتصاد والمجتمع -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">الاقتصاد والمجتمع</h2>
+  <p class="mb-2">
+    واصلت الدولة رعاية <strong>الأسواق وطرق القوافل</strong> بين الشرق والغرب، وربطت الحواضر بالمراكز،
+    ودفعت بالاستقرار في نجد والأحساء والقصيم عبر نظم الجباية والإنفاق وتعيين العمال والقضاة.
+  </p>
+  <p class="mb-0">
+    أسهمت حلقات <strong>العلم والقضاء</strong> في تعزيز الاستقرار، مع استمرار نمط العمران النجدي وتطوّر
+    النسيج الاجتماعي بين البادية والحاضرة ضمن منظومة الولاء للدولة.
+  </p>
+</section>
+
+<!-- نهاية الدولة -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">نهاية الدولة السعودية الثانية</h2>
+  <p class="mb-2">
+    عاد الإمام <strong>عبدالله</strong> وأخوه <strong>عبدالرحمن</strong> ابنا فيصل بن تركي إلى الرياض، فتُوفّي عبدالله بعد وصوله بيومين،
+    وتولى عبدالرحمن الحكم. ثم تقدّم <strong>محمد بن رشيد</strong> عام 1308هـ/1890م وحاصر الرياض، وتمّ
+    الاتفاق على انسحابه مقابل قبول إمارة ابن رشيد على الرياض وبلدان العارض والمحمل والوشم والخرج والحوطة والحريق
+    والأفلاج ووادي الدواسر ضمن نطاق الدولة بقيادة الإمام عبدالرحمن.
+  </p>
+  <p class="mb-2">
+    أدت <strong>الخلافات بين أبناء الإمام فيصل</strong> وتعدّد مراكز الولاء، مع ضغط القوى الإقليمية والدولة العثمانية
+    ودعمها لخصوم الدولة (آل حميد، بعض أمراء الحجاز، وآل رشيد) إلى إنهاك الكيان السعودي الثاني وانتهائه عام 1309هـ/1891م.
+  </p>
+  <p class="mb-0">
+    حاول الإمام عبدالرحمن استعادة الرياض والخرج سنة 1309هـ/1891م، لكن رُدّت قواته في حريملاء،
+    ثم هُدمت أسوار الرياض وعُيّن محمد بن فيصل عليها؛ وبذلك انتهت الفترة الثانية لحكم عبدالرحمن
+    (1307–1309هـ / 1889–1891م)، لتبدأ لاحقًا مرحلة <strong>الاستعادة على يد الملك عبدالعزيز</strong> سنة 1319هـ/1902م.
+  </p>
+</section>
+
+<!-- الإدارة والتنظيم -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">الإدارة والتنظيم</h2>
+  <ul class="list-group">
+    <li class="list-group-item">اتُّخذت <strong>الرياض</strong> مقرًا للحكم، وفيها <em>قصر الحكم</em> والمسجد الجامع ومجالس القضاء والدواوين.</li>
+    <li class="list-group-item">تولّى الأئمة تعيين <strong>العمّال</strong> (الولاة) على الأقاليم مع إلزامهم بجمع الزكوات والجبايات الشرعية وصيانة الأمن.</li>
+    <li class="list-group-item">استمر العمل بنظام <strong>بيت المال</strong> للأعطيات والرواتب ونفقات الجهاد وصيانة الطرق والأسوار.</li>
+    <li class="list-group-item">حضور <strong>العلماء والقضاة</strong> في صنع القرار، ومحاكم شرعية لسماع الدعاوى والخصومات.</li>
+  </ul>
+</section>
+
+<!-- الجيش والأمن -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">الجيش والأمن</h2>
+  <ul class="list-group">
+    <li class="list-group-item">تكوّن الجيش من <strong>الخيالة</strong> و<strong>المشاة</strong> وركائب الهجن، مع استخدام البنادق المتاحة آنذاك والسيوف والحراب.</li>
+    <li class="list-group-item">اعتمد التجنيد على الولاء القبلي والبلدي، مع <strong>نُقباء</strong> و<em>رؤساء سرايا</em> بإمرة قادة ميدانيين من آل سعود وحلفائهم.</li>
+    <li class="list-group-item">حفظ <strong>طرق القوافل</strong> والتجارة بين الشرق والغرب، وتأمين موارد المياه ومنازل الطريق.</li>
+  </ul>
+</section>
+
+<!-- العلاقات الإقليمية -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">العلاقات الإقليمية</h2>
+  <p class="mb-2">
+    نسجت الدولة السعودية الثانية علاقاتها مع القوى المحيطة وفق موازين القوى في ذلك الزمن؛
+    فتراوحت العلاقة مع السلطة العثمانية ووكلائها بين <strong>مهادنة</strong> و<strong>مواجهة</strong> بحسب الظرف،
+    كما أثّر <strong>انسحاب القوات المصرية</strong> من الجزيرة (بعد معاهدات أوروبية) في عودة الإمام فيصل بن تركي إلى الحكم سنة 1259هـ/1843م.
+  </p>
+  <p class="mb-0">
+    داخليًا، برز <strong>آل رشيد</strong> في حائل قوةً صاعدة دعمت بعض أطراف النزاع العائلي في نجد، ما غيّر التوازنات خلال العقود الأخيرة.
+  </p>
+</section>
+
+<!-- العمران والاقتصاد -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">العمران والاقتصاد</h2>
+  <ul class="list-group">
+    <li class="list-group-item">تعمير <strong>أسوار الرياض</strong> وبواباتها وأسواقها (الديرة والمقيبرة وغيرها) مع امتداد الأحياء السكنية الطينية والجصّية.</li>
+    <li class="list-group-item">اقتصاد قائم على <strong>الزراعة</strong> (التمور والحبوب) وتربية الماشية، وتجارة تنتفع بمرافئ الخليج وطرق البرّ عبر الأحساء والقصيم.</li>
+    <li class="list-group-item">تنظيم <strong>الجبايات</strong> الشرعية، وتشجيع الحركة السوقية، وربط الحواضر بالبوادي عبر مراكز نفوذ محلية.</li>
+  </ul>
+</section>
+
+<!-- العلم والقضاء -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">العلم والقضاء</h2>
+  <p class="mb-2">
+    نشطت حلقات العلم في الجوامع والمدارس التقليدية، واستمر القضاء الشرعي على المذاهب المعتمدة،
+    وتثبيت <strong>هيبة القضاء</strong> عبر الرقابة على القضاة والعمّال وحظر الرشوة واستغلال المنصب.
+  </p>
+  <p class="mb-0">
+    شملت الأعمال الخيرية رعاية طلبة العلم ونسخ الكتب، مع حضور علمي مؤثر في ضبط الشأن العام.
+  </p>
+</section>
+
+<!-- محطات بارزة -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">محطات بارزة</h2>
+  <div class="list-group">
+    <div class="list-group-item"><strong>1240هـ/1824م:</strong> استرداد <strong>الرياض</strong> على يد الإمام تركي بن عبدالله وإعلان قيام الدولة.</div>
+    <div class="list-group-item"><strong>1249هـ/1834م:</strong> اغتيال الإمام تركي، وتولّي <strong>الإمام فيصل بن تركي</strong> الحكم بعد حسم الصراع الداخلي.</div>
+    <div class="list-group-item"><strong>1254هـ/1838م:</strong> حملة عثمانية–مصرية تؤدي إلى <em>نفي فيصل</em> إلى مصر، ثم انسحاب القوات لاحقًا.</div>
+    <div class="list-group-item"><strong>1259هـ/1843م:</strong> عودة الإمام فيصل إلى الحكم وبداية <strong>مرحلة استقرار نسبي</strong> امتدت حتى 1282هـ/1865م.</div>
+    <div class="list-group-item"><strong>1282هـ/1865م وما بعدها:</strong> تنافس بين أبناء الإمام فيصل (عبدالله وسعود) وتدخلات إقليمية تُضعف الكيان.</div>
+    <div class="list-group-item"><strong>1307–1309هـ/1889–1891م:</strong> حكم الإمام <strong>عبدالرحمن بن فيصل</strong> ينتهي بهزائم أمام <strong>محمد بن رشيد</strong>، وتُعد <em>معركة المليداء</em> (1308هـ/1891م تقريبًا) من أبرز المحطات الفاصلة، ثم سقوط الرياض ونهاية الدولة.</div>
+  </div>
+</section>
+
+
+{% endblock %}

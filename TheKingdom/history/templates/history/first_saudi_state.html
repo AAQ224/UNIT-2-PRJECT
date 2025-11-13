@@ -1,0 +1,226 @@
+{% extends 'history/base.html' %}
+{% load static %}
+{% block body_class %}page-era{% endblock %}
+{% block title %}الدولة السعودية الأولى — The Kingdom{% endblock %}
+<script src="{% static 'history/js/timeline.js' %}"></script>
+{% block content %}
+<!-- صورة بانر -->
+<div class="text-center mb-4">
+  <h1 class="text-success fw-bold mb-1">الدولة السعودية الأولى</h1>
+  <div class="text-muted mb-3">(1139هـ/1727م – 1233هـ/1818م)</div>
+  <img src="{% static 'history/images/eras/first-banner.jpg' %}" alt="الدولة السعودية الأولى"
+       class="img-fluid rounded-3 shadow-sm" style="max-height:420px; object-fit:cover; width:100%;">
+</div>
+
+<!-- تمهيد -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">تمهيد</h2>
+  <p class="mb-2">
+    الدولة السعودية الأولى هي الكيان الذي أسّسه الإمام محمد بن سعود عام 1139هـ/1727م، واتخذ من الدرعية عاصمةً لها.
+    وبذلك سبقت قيام الولايات المتحدة الأمريكية بـ 49 عامًا. انطلقت من نجد بهدف توحيد شبه الجزيرة العربية بعد قرون
+    من التشظي وعدم الاستقرار السياسي والأمني. وعلى امتداد تاريخها الذي بلغ 94 عامًا، تولّى حكمها أربعة من أئمة آل سعود:
+    الإمام المؤسس محمد بن سعود، ثم الإمام عبدالعزيز بن محمد، فالإمام سعود بن عبدالعزيز، وأخيرًا الإمام عبدالله بن سعود.
+    واتخذت الدولة من قصر سلوى في حي الطريف بالدرعية مقرًا للحكم، واستمرت منذ 1139هـ/1727م حتى 1233هـ/1818م.
+  </p>
+</section>
+
+<!-- حكّام الدولة السعودية الأولى -->
+<section class="mb-4 timeline" aria-label="أئمة الدولة السعودية الأولى">
+  <h2 class="timeline-title text-success">حكام الدولة السعودية الأولى</h2>
+
+  <div class="tl-list">
+
+    <!-- 1- الإمام محمد بن سعود -->
+    <article class="tl-item">
+      <div class="tl-item-inner">
+        <div class="card h-100 text-center">
+          <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover"
+                 src="{% static 'history/images/rulers/imam-muhammad-bin-saud.jpg' %}"
+                 alt="الإمام محمد بن سعود">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="fw-semibold">الإمام محمد بن سعود</div>
+            <div class="text-muted small mb-2">1139–1179هـ / 1727–1765م</div>
+            <p class="small flex-grow-1">
+              مؤسس الدولة السعودية الأولى، وحّد نجد واتخذ الدرعية عاصمة.
+            </p>
+            <a href="{% url 'ruler_muhammad_bin_saud' %}"
+               class="btn btn-success btn-sm mt-auto" target="_blank">
+              صفحة السيرة
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2- الإمام عبدالعزيز بن محمد -->
+    <article class="tl-item">
+      <div class="tl-item-inner">
+        <div class="card h-100 text-center">
+          <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover"
+                 src="{% static 'history/images/rulers/abdulaziz-bin-muhammad.jpg' %}"
+                 alt="الإمام عبدالعزيز بن محمد">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="fw-semibold">الإمام عبدالعزيز بن محمد</div>
+            <div class="text-muted small mb-2">1179–1218هـ / 1765–1803م</div>
+            <p class="small flex-grow-1">
+              تابع توحيد الأقاليم ورسّخ القضاء والإدارة.
+            </p>
+            <a href="{% url 'ruler_abdulaziz_bin_muhammad' %}"
+               class="btn btn-success btn-sm mt-auto" target="_blank">
+              صفحة السيرة
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3- الإمام سعود بن عبدالعزيز -->
+    <article class="tl-item">
+      <div class="tl-item-inner">
+        <div class="card h-100 text-center">
+          <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover"
+                 src="{% static 'history/images/rulers/saud-bin-abdulaziz.jpg' %}"
+                 alt="الإمام سعود بن عبدالعزيز">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="fw-semibold">الإمام سعود بن عبدالعزيز</div>
+            <div class="text-muted small mb-2">1218–1229هـ / 1803–1814م</div>
+            <p class="small flex-grow-1">
+              بلغت الدولة أوج اتساعها ووصلت حدودها الشام والعراق.
+            </p>
+            <a href="{% url 'ruler_saud_bin_abdulaziz' %}"
+               class="btn btn-success btn-sm mt-auto" target="_blank">
+              صفحة السيرة
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4- الإمام عبدالله بن سعود -->
+    <article class="tl-item">
+      <div class="tl-item-inner">
+        <div class="card h-100 text-center">
+          <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover"
+                 src="{% static 'history/images/rulers/abdullah-bin-saud.jpg' %}"
+                 alt="الإمام عبدالله بن سعود">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <div class="fw-semibold">الإمام عبدالله بن سعود</div>
+            <div class="text-muted small mb-2">1229–1233هـ / 1814–1818م</div>
+            <p class="small flex-grow-1">
+              واجه الحملات العثمانية حتى حصار الدرعية وسقوطها.
+            </p>
+            <a href="{% url 'ruler_abdullah_bin_saud' %}"
+               class="btn btn-success btn-sm mt-auto" target="_blank">
+              صفحة السيرة
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+
+
+<!-- الامتداد والإدارة (قائمة مختصرة منظمة) -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">الامتداد والإدارة</h2>
+  <ul class="list-group">
+    <li class="list-group-item">عاصمة الدولة: الدرعية. مقرّ الحكم: قصر سلوى بحي الطريف.</li>
+    <li class="list-group-item">توحيد نجد تدريجيًا خلال ~40 عامًا، واتساع النفوذ شرقًا وغربًا وشمالًا وجنوبًا.</li>
+    <li class="list-group-item">تنظيمات مالية وقضائية، وتعيين القضاة والعمال، وربط الحاضرات بالمراكز.</li>
+    <li class="list-group-item">نمو الأسواق وحماية طرق القوافل، وإسهام حلقات العلم والقضاء في الاستقرار.</li>
+  </ul>
+</section>
+
+<!-- الإصلاحات السياسية -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">الإصلاحات السياسية للدولة السعودية الأولى</h2>
+  <p class="mb-2">
+    كسرت الإصلاحات السياسية هيمنة القوى الاقتصادية وأزالت الفوارق الطبقية، ووسّعت نطاق التعليم،
+    وفتحت الاقتصاد للتجارة بين شرق مناطق الدولة وغربها؛ ما عزّز مكانة الدرعية مركزًا سياسيًا وحضريًا
+    مؤثرًا في الجزيرة العربية، وامتد نفوذها إلى الأقاليم المجاورة.
+  </p>
+  <p class="mb-2">
+    رحّبت عامة الناس بهذه الإصلاحات، فيما رأتها بعض النخب العلمية تهديدًا لمصالحها، خصوصًا بعد
+    مكافحة الرشوة واستغلال القضاء. وبدأت مسيرة توحيد نجد بتحرير منفوحة من بطش عمّال الأقاليم،
+    ومع الإصرار توحّدت بلدات نجد خلال نحو أربعين عامًا؛ فكانت حريملاء أولى المدن التابعة، ثم القويعية
+    أول مدينة بايعت طواعية.
+  </p>
+  <p class="mb-0">
+    تواصل التوسّع شرقًا نحو الأحساء وإمارة آل حميد (بنو خالد) حيث دارت مواجهات امتدت 12 عامًا (1198–1210هـ)،
+    لتنضم المنطقة الشرقية إلى الدولة. كما اتسع النفوذ شمالًا وجنوبًا، وانضمت القصيم (بريدة 1182هـ ثم عنيزة)،
+    ولحقت بها حائل، ما أسهم بالسيطرة على تيماء ودومة الجندل.
+  </p>
+</section>
+
+<!-- الحجاز والانضمام -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">الحجاز وأهمية الحرمين</h2>
+  <p class="mb-2">
+    رغم خضوع الحجاز سياسيًا للعثمانيين، فإن قطاعات واسعة من أهله رغبت بالانضمام للدولة السعودية
+    لما لمسوه من إصلاح وازدهار. سعت الدولة إلى ترسيخ علاقات حسنة مع الأشراف، لكن الحملات الدعائية
+    المضادة شوّهت صورتها بين الحجاج. ومع ذلك، وفي 1220هـ/1806م دخلت مكة ضمن الدولة باتفاقات
+    انتهت بتبعيتها، وتبعتها المدينة المنورة لاحقًا.
+  </p>
+  <p class="mb-0">
+    كما تقدّمت حملات الدولة جنوبًا نحو بيشة وبلدات عسير، وأسهم طلاب العلم الخارجون من الدرعية في نشر الدعوة،
+    حتى وصلت أبي عريش، واستكمل التوسّع شمالًا بضم القصيم ثم حائل.
+  </p>
+</section>
+
+<!-- الأزياء التقليدية -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">الأزياء التقليدية في عهد الدولة السعودية الأولى</h2>
+  <h3 class="h6 mt-3">أزياء الرجال</h3>
+  <p class="mb-2">
+    ارتبطت أزياء الرجال بطبيعة المعيشة؛ الثوب أساس الزي مع أشكال كالمرودن واسع الأكمام. في أغطية الرأس
+    انتشرت الكوفية (امتداد الغترة) بألوان متعددة، تُثبت بلفّة تقوم مقام العقال. ومن العباءات الشهيرة:
+    <strong>القيلانية</strong> من صوف ناعم مُوشّى بالزري، و<strong>البرقاء</strong> المنسوجة من صوف الماعز بخطوط
+    عريضة، وتُلبس غالبًا شتاءً.
+  </p>
+
+  <h3 class="h6 mt-3">أزياء النساء</h3>
+  <p class="mb-2">
+    تميزت بأقمشة طبيعية وحريرية زاهية الألوان، وزخارف مذهّبة وحُليّ نفيسة. من القطع: <strong>المقطع/الدراعة</strong>
+    بأشكال مختلفة مثل «مقطع الزري»، ويُلبس فوقه <strong>الثوب</strong> الخفيف كالـتُل والشيفون والدانتيل. وللخروج
+    تُستخدم <strong>العباءة</strong> بأنواع عديدة، منها القيلانية والمنسوجات المزيّنة بالنقوش.
+  </p>
+</section>
+
+<!-- الحدود والامتداد -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">حدود وامتداد الدولة</h2>
+  <p class="mb-0">
+    في عهد الإمام سعود بن عبدالعزيز امتدت الدولة إلى العراق والشام، وشملت معظم الجزيرة العربية
+    عدا الكويت وحضرموت، وكان قيامها حدثًا مفصليًا في نجد بعد نحو عشرة قرون من الفوضى وضعف الكيانات الصغيرة.
+  </p>
+</section>
+
+<!-- المواجهات مع العثمانيين -->
+<section class="mb-4">
+  <h2 class="h5 fw-bold">مواجهات الدولة السعودية مع العثمانيين</h2>
+  <p class="mb-2">
+    تصاعد نفوذ الدولة في الحجاز شكّل تحديًا للعثمانيين؛ فحرّكوا واليهم على مصر محمد علي باشا.
+    بدأ ابنه طوسون حملته سنة 1226هـ/1811م وهُزم بدايةً، ثم عاد ليدخل المدينة المنورة وجدة ومكة باتفاقات
+    مع الشريف غالب؛ ما مهّد للسيطرة على الحجاز.
+  </p>
+  <p class="mb-2">
+    وفي 1231هـ/1816م قاد إبراهيم باشا حملة كبرى عبر ينبع، وحاصر الرس ثلاثة أشهر ثم صالح، وتقدّم
+    نحو بريدة والوشم وضرماء حيث تكبّد خسائر. وأخيرًا حاصر الدرعية ستة أشهر، فخرج الإمام عبدالله بن سعود
+    حقنًا للدماء، لكن إبراهيم باشا نكث وعده ودكّ الدرعية بالمدافع وخرّبها، وأُسر الإمام ونُقل لإسطنبول حيث أُعدم،
+    فانتهى حكم الدولة الأولى عام 1233هـ/1818م.
+  </p>
+</section>
+
+{% endblock %}

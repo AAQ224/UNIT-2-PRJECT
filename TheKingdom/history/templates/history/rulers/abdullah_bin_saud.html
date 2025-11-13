@@ -1,0 +1,58 @@
+{% extends 'history/base.html' %}
+{% load static %}
+{% block body_class %}page-era{% endblock %}
+
+{% block title %}الإمام عبدالله بن سعود — TheKingdom{% endblock %}
+{% block content %}
+<header class="mb-4 text-center">
+  <h1 class="text-success">الإمام عبدالله بن سعود</h1>
+  <p class="text-muted">الإمام الشهيد — (1229–1233هـ / 1814–1818م)</p>
+</header>
+
+<div class="row g-4">
+  <div class="col-12 col-lg-4">
+    <div class="card h-100">
+      <div class="ratio ratio-1x1">
+        <img src="{% static 'history/images/rulers/abdullah-bin-saud.jpg' %}" class="card-img-top object-fit-cover" alt="الإمام عبدالله بن سعود">
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled small m-0">
+          <li><strong>اللقب:</strong> إمام الدولة السعودية الأولى</li>
+          <li><strong>العاصمة:</strong> الدرعية</li>
+          <li><strong>الحدث المفصلي:</strong> حصار الدرعية والحملة العثمانية</li>
+          <li><strong>الفترة:</strong> 1229–1233هـ / 1814–1818م</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-8">
+    <section class="mb-4">
+      <h2 class="h5 mb-2">نبذة</h2>
+      <p>
+        تولّى الحكم في فترة شديدة التحديات مع الحملات العثمانية القادمة من مصر بقيادة
+        إبراهيم باشا، وصمدت الدرعية أشهرًا طويلة قبل تدميرها عام 1233هـ/1818م وإنهاء الدولة الأولى.
+      </p>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">محطات بارزة</h2>
+      <ul class="list-group">
+        <li class="list-group-item">الدفاع عن القصيم والوشم وسدير والعارض خلال زحف القوات المعادية.</li>
+        <li class="list-group-item">حصار الدرعية ستة أشهر ومعارك استنزاف طويلة.</li>
+        <li class="list-group-item">نهاية الدولة الأولى وتعرض الدرعية للتدمير ونقل الإمام إلى إسطنبول.</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">الإرث والتأثير</h2>
+      <p>
+        مثّلت نهاية الدولة الأولى محطة تأسيس للعودة لاحقًا عبر الدولة السعودية الثانية من الرياض
+        عام 1240هـ على يد الإمام تركي بن عبدالله، واستمرار السلالة والدولة.
+      </p>
+    </section>
+
+    <a href="{% url 'era_first' %}" class="btn btn-outline-success">← العودة إلى الدولة السعودية الأولى</a>
+  </div>
+</div>
+{% endblock %}

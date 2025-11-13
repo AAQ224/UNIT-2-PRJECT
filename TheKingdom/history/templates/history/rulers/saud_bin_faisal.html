@@ -1,0 +1,58 @@
+{% extends 'history/base.html' %}
+{% load static %}
+{% block body_class %}page-era{% endblock %}
+
+{% block title %}الإمام سعود بن فيصل — TheKingdom{% endblock %}
+{% block content %}
+<header class="mb-4 text-center">
+  <h1 class="text-success">الإمام سعود بن فيصل بن تركي</h1>
+  <p class="text-muted">عهد قصير وسط منافسة داخلية — (1288–1291هـ / 1871–1875م)</p>
+</header>
+
+<div class="row g-4">
+  <div class="col-12 col-lg-4">
+    <div class="card h-100">
+      <div class="ratio ratio-1x1">
+        <img src="{% static 'history/images/rulers/saud-bin-faisal.jpg' %}" class="card-img-top object-fit-cover" alt="الإمام سعود بن فيصل">
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled small m-0">
+          <li><strong>اللقب:</strong> إمام الدولة السعودية الثانية</li>
+          <li><strong>العاصمة:</strong> الرياض</li>
+          <li><strong>السمات:</strong> تنازع داخلي وتحديات خارجية</li>
+          <li><strong>الفترة:</strong> 1288–1291هـ / 1871–1875م</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-8">
+    <section class="mb-4">
+      <h2 class="h5 mb-2">نبذة</h2>
+      <p>
+        جاء عهده في ظل منافسة محتدمة داخل البيت الحاكم، مع تزايد آثار التدخلات الخارجية،
+        ما صعّب الحفاظ على تماسك الأقاليم وربطها بالمركز كما في الفترات الأسبق.
+      </p>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">محطات بارزة</h2>
+      <ul class="list-group">
+        <li class="list-group-item">محاولات بسط النفوذ في العارض والقصيم.</li>
+        <li class="list-group-item">تضاؤل قدرة الدولة على إدارة الموارد والأمن في الأطراف.</li>
+        <li class="list-group-item">استمرار التناوب مع عبدالله بن فيصل بما أثّر على الاستقرار.</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">الإرث والتأثير</h2>
+      <p>
+        مثّل عهده مرحلة انتقالية صعبة سبقت أفول الدولة الثانية،
+        وبيّن الحاجة إلى إعادة بناء مركز قوي عاد لاحقًا في الدولة الثالثة.
+      </p>
+    </section>
+
+    <a href="{% url 'era_second' %}" class="btn btn-outline-success">← العودة إلى الدولة السعودية الثانية</a>
+  </div>
+</div>
+{% endblock %}

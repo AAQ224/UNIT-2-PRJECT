@@ -1,0 +1,57 @@
+{% extends 'history/base.html' %}
+{% load static %}
+{% block body_class %}page-era{% endblock %}
+{% block title %}الإمام محمد بن سعود — TheKingdom{% endblock %}
+{% block content %}
+<header class="mb-4 text-center">
+  <h1 class="text-success">الإمام محمد بن سعود بن مقرن</h1>
+  <p class="text-muted">مؤسس الدولة السعودية الأولى — (حكم 1139–1179هـ / 1727–1765م)</p>
+</header>
+
+<div class="row g-4">
+  <div class="col-12 col-lg-4">
+    <div class="card h-100">
+      <div class="ratio ratio-1x1">
+        <img src="{% static 'history/images/rulers/imam-muhammad-bin-saud.jpg' %}" class="card-img-top object-fit-cover" alt="الإمام محمد بن سعود">
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled small m-0">
+          <li><strong>اللقب:</strong> إمام الدرعية ومؤسس الدولة الأولى</li>
+          <li><strong>العاصمة:</strong> الدرعية (حي الطريف)</li>
+          <li><strong>الحدث المفصلي:</strong> إطلاق مشروع توحيد الأقاليم في نجد</li>
+          <li><strong>الفترة:</strong> 1139–1179هـ / 1727–1765م</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-8">
+    <section class="mb-4">
+      <h2 class="h5 mb-2">نبذة</h2>
+      <p>
+        أسّس الإمام محمد بن سعود الدولة السعودية الأولى في الدرعية، وانطلقت منها حركة توحيد الأقاليم
+        وبناء الإدارة والقضاء، وترسيخ الأمن بعد قرون من التشظّي السياسي في وسط الجزيرة العربية.
+      </p>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">محطات بارزة</h2>
+      <ul class="list-group">
+        <li class="list-group-item">تثبيت الحكم في الدرعية وجذب القرى والحواضر المجاورة بالحلف والإدارة.</li>
+        <li class="list-group-item">بناء جهاز إداري وقضائي بسيط مكّن من ضبط الأمن وتسيير شؤون الناس.</li>
+        <li class="list-group-item">إرساء أسس التوسّع السلمي ثم العسكري لتأمين طرق التجارة والانتقال.</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">الإرث والتأثير</h2>
+      <p>
+        ترك نموذجًا لدولة مركزية ناشئة في نجد، ورثه أبناؤه فوسّعوه حتى غدت الدولة الأولى كيانًا عربيًا
+        واسعًا امتدّ إلى معظم أرجاء الجزيرة العربية خلال عقود قليلة.
+      </p>
+    </section>
+
+    <a href="{% url 'era_first' %}" class="btn btn-outline-success">← العودة إلى الدولة السعودية الأولى</a>
+  </div>
+</div>
+{% endblock %}

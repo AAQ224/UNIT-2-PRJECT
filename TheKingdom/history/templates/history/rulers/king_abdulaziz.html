@@ -1,0 +1,63 @@
+{% extends 'history/base.html' %}
+{% load static %}
+{% block body_class %}page-era{% endblock %}
+
+{% block title %}الملك عبدالعزيز — TheKingdom{% endblock %}
+
+{% block content %}
+<header class="mb-4 text-center">
+  <h1 class="text-success">الملك عبدالعزيز بن عبدالرحمن آل سعود</h1>
+  <p class="text-muted">مؤسس المملكة العربية السعودية الحديثة — (1877–1953م)</p>
+</header>
+
+<div class="row g-4">
+  <div class="col-12 col-lg-4">
+    <div class="card h-100">
+      <div class="ratio ratio-1x1">
+        <img src="{% static 'history/images/rulers/king-abdulaziz.jpg' %}" class="card-img-top object-fit-cover" alt="الملك عبدالعزيز">
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled small m-0">
+          <li><strong>الفترة:</strong> 1902–1953 </li>
+          <li><strong>اللقب:</strong> ملك المملكة العربية السعودية</li>
+          <li><strong>الحدث المفصلي:</strong> توحيد البلاد وإعلان المملكة 1932</li>
+          <li><strong>العاصمة:</strong> الرياض</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-8">
+    <section class="mb-4">
+      <h2 class="h5 mb-2">نبذة</h2>
+      <p>
+        قاد الملك عبدالعزيز مشروع توحيد أقاليم الجزيرة العربية على مدى ثلاثة عقود، انطلق باستعادة الرياض عام 1902م،
+        ثم توالت مراحل التوحيد حتى إعلان <strong>المملكة العربية السعودية</strong> عام 1932م. وضع أسس الدولة الحديثة
+        ببناء المؤسسات والأنظمة والإدارة المركزية، وترسيخ الأمن وربط الأقاليم بالطرق والحاميات.
+      </p>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">محطات بارزة</h2>
+      <ul class="list-group">
+        <li class="list-group-item">استعادة الرياض (1902م) وبداية مسار التوحيد.</li>
+        <li class="list-group-item">توحيد الأقاليم تباعًا حتى إعلان الدولة (1932م).</li>
+        <li class="list-group-item">بناء الوزارات والمجالس (الوكلاء، الشورى) وتأسيس مجلس الوزراء لاحقًا.</li>
+        <li class="list-group-item">تنظيم شؤون الحج وتوسعة الحرمين وتطوير شبكات الطرق والصحة.</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">الإرث والتأثير</h2>
+      <p>
+        أسس لمرحلة استقرار ونمو انتهجها أبناؤه الملوك بتوسيع التعليم والصحة والبنية التحتية والاقتصاد،
+        وصولًا إلى برامج التحول الحديثة في عهد خادم الحرمين الشريفين الملك سلمان.
+      </p>
+    </section>
+
+    <a href="{% url 'era_third' %}" class="btn btn-outline-success">
+      ← العودة إلى صفحة المملكة العربية السعودية
+    </a>
+  </div>
+</div>
+{% endblock %}

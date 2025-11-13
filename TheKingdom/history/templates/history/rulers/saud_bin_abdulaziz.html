@@ -1,0 +1,58 @@
+{% extends 'history/base.html' %}
+{% load static %}
+{% block body_class %}page-era{% endblock %}
+
+{% block title %}الإمام سعود بن عبدالعزيز — TheKingdom{% endblock %}
+{% block content %}
+<header class="mb-4 text-center">
+  <h1 class="text-success">الإمام سعود بن عبدالعزيز بن محمد</h1>
+  <p class="text-muted">بلغت الدولة أوج قوّتها في عهده — (1218–1229هـ / 1803–1814م)</p>
+</header>
+
+<div class="row g-4">
+  <div class="col-12 col-lg-4">
+    <div class="card h-100">
+      <div class="ratio ratio-1x1">
+        <img src="{% static 'history/images/rulers/saud-bin-abdulaziz.jpg' %}" class="card-img-top object-fit-cover" alt="الإمام سعود بن عبدالعزيز">
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled small m-0">
+          <li><strong>اللقب:</strong> إمام الدولة السعودية الأولى</li>
+          <li><strong>العاصمة:</strong> الدرعية</li>
+          <li><strong>السمات:</strong> أوج الاتساع العسكري والإداري</li>
+          <li><strong>الفترة:</strong> 1218–1229هـ / 1803–1814م</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-8">
+    <section class="mb-4">
+      <h2 class="h5 mb-2">نبذة</h2>
+      <p>
+        اتسعت رقعة الدولة السعودية الأولى في عهد الإمام سعود نحو الحجاز والشرق والشمال،
+        وازدادت فاعلية الإدارة وجباية الموارد وحماية طرق الحج والتجارة، ما عزز مكانة الدرعية سياسيًا واقتصاديًا.
+      </p>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">محطات بارزة</h2>
+      <ul class="list-group">
+        <li class="list-group-item">تقدم نحو الحجاز ووصول نفوذ الدولة إلى مكة المكرمة لاحقًا (1220هـ تقريبًا).</li>
+        <li class="list-group-item">تعزيز الحاميات وربط الأقاليم بالمركز إداريًا وعسكريًا.</li>
+        <li class="list-group-item">تنظيم موارد الدولة لحماية الأمن والخدمات الأساسية.</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">الإرث والتأثير</h2>
+      <p>
+        مثّل ذروة قوة الدولة الأولى؛ وقد واجهت الدولة بعدها تحديات عسكرية كبيرة مع العثمانيين
+        وصلت إلى حصار الدرعية في عهد الإمام عبدالله بن سعود.
+      </p>
+    </section>
+
+    <a href="{% url 'era_first' %}" class="btn btn-outline-success">← العودة إلى الدولة السعودية الأولى</a>
+  </div>
+</div>
+{% endblock %}

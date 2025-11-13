@@ -1,0 +1,56 @@
+{% extends 'history/base.html' %}
+{% load static %}
+{% block body_class %}page-era{% endblock %}
+
+{% block title %}الملك فيصل بن عبدالعزيز — TheKingdom{% endblock %}
+{% block content %}
+<header class="mb-4 text-center">
+  <h1 class="text-success">الملك فيصل بن عبدالعزيز آل سعود</h1>
+  <p class="text-muted">إصلاحات واسعة وسياسة خارجية متوازنة — (1906–1975م)</p>
+</header>
+
+<div class="row g-4">
+  <div class="col-12 col-lg-4">
+    <div class="card h-100">
+      <div class="ratio ratio-1x1">
+        <img src="{% static 'history/images/rulers/king-faisal.jpg' %}" class="card-img-top object-fit-cover" alt="الملك فيصل">
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled small m-0">
+          <li><strong>الفترة:</strong> 1964–1975</li>
+          <li><strong>التركيز:</strong> تحديث الإدارة والتعليم والاقتصاد</li>
+          <li><strong>العاصمة:</strong> الرياض</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-8">
+    <section class="mb-4">
+      <h2 class="h5 mb-2">نبذة</h2>
+      <p>
+        عزّز كفاءة مؤسسات الدولة ووسّع التعليم، وانتهج سياسة خارجية داعمة للقضايا العربية والإسلامية،
+        مع خطوات تحديثية انعكست على الإدارة والاقتصاد.
+      </p>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">محطات بارزة</h2>
+      <ul class="list-group">
+        <li class="list-group-item">تحسين كفاءة الجهاز الإداري وإعادة تنظيم الوزارات.</li>
+        <li class="list-group-item">توسيع التعليم العام وتأسيس معاهد وكليات.</li>
+        <li class="list-group-item">مواقف دولية مؤثرة وسياسة متوازنة.</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">الإرث والتأثير</h2>
+      <p>
+        رسّخ منظومة إصلاحات شكلت قاعدة لمراحل التطوير اللاحقة في الاقتصاد والتعليم والعلاقات الدولية.
+      </p>
+    </section>
+
+    <a href="{% url 'era_third' %}" class="btn btn-outline-success">← العودة إلى صفحة المملكة العربية السعودية</a>
+  </div>
+</div>
+{% endblock %}

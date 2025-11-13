@@ -1,0 +1,89 @@
+{% extends 'history/base.html' %}
+{% load static %}
+
+{% block title %}الرئيسية — TheKingdom{% endblock %}
+
+
+{% block hero %}
+<section class="hero">
+  <video class="hero__video"
+         src="{% static 'history/videos/hero.mp4' %}"
+         poster="{% static 'history/images/hero-poster.jpg' %}"
+         autoplay
+         muted
+         loop
+         playsinline
+         preload="metadata">
+    متصفحك لا يدعم تشغيل الفيديو.
+  </video>
+
+  <div class="hero__overlay"></div>
+
+  <div class="hero__content">
+    <button id="muteBtn" class="btn btn-sm hero__mute">
+      كتم الصوت
+    </button>
+
+    <span class="hero__kicker">KSA Timeline</span>
+    <h1 class="hero__title">الخط الزمني لتاريخ المملكة العربية السعودية</h1>
+    <p class="hero__subtitle">
+      رحلة تعليمية تتبع مسار الدول السعودية من الدرعية وحتى رؤية 2030، مع نبذات عن الحُكّام والمفاصل التاريخية.
+    </p>
+    <div class="d-flex gap-2 flex-wrap justify-content-center">
+      <a href="{% url 'era_first' %}" class="btn btn-success btn-lg">ابدأ من الدولة الأولى</a>
+      <a href="#overview" class="btn btn-outline-light btn-lg">نظرة عامة</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block content %}
+<section id="overview" class="mb-5">
+  <div class="text-center mb-4">
+    <h2 class="h4 text-success mb-1">نظرة عامة</h2>
+    <p class="text-muted mb-0">يمثل هذا الموقع رحلة تفاعلية عبر تاريخ المملكة العربية السعودية، منذ تأسيس الدولة السعودية الأولى في الدرعية وحتى مرحلة الازدهار الحديثة في ظل رؤية المملكة 2030.
+
+يهدف المشروع إلى تقديم محتوى تعليمي مبسط بأسلوب بصري حديث، يجمع بين التاريخ والمعلومة في تجربة تصفح سلسة وغنية. من خلال الخط الزمني والوسائط المرئية، يمكن للزائر استكشاف المراحل المفصلية التي شكّلت ملامح الدولة، والتعرّف على إنجازات قادتها عبر العصور.</p>
+  </div>
+</section>
+
+<h1 class="text-success mb-3">الدول السعودية عبر التاريخ</h1>
+<p class="text-muted">اختر الدولة للاطلاع على تفاصيلها.</p>
+
+<div class="row row-cols-1 row-cols-md-3 g-3 mt-3">
+  <!-- الدولة السعودية الأولى -->
+  <div class="col">
+    <a class="card card-hover h-100 text-decoration-none" href="{% url 'era_first' %}">
+      <img src="{% static 'history/images/eras/first-banner.jpg' %}" class="card-img-top hero-img" alt="الدولة السعودية الأولى">
+      <div class="card-body">
+        <h3 class="h5 mb-1">الدولة السعودية الأولى</h3>
+        <div class="text-muted small mb-2">1139–1233هـ / 1727–1818م</div>
+        <p class="small mb-0">نشأت في الدرعية وتحوّلت بسرعة إلى دولة واسعة النفوذ، ركّزت على الأمن والإدارة والقضاء.</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- الدولة السعودية الثانية -->
+  <div class="col">
+    <a class="card card-hover h-100 text-decoration-none" href="{% url 'era_second' %}">
+      <img src="{% static 'history/images/eras/second-banner.jpg' %}" class="card-img-top hero-img" alt="الدولة السعودية الثانية">
+      <div class="card-body">
+        <h3 class="h5 mb-1">الدولة السعودية الثانية</h3>
+        <div class="text-muted small mb-2">1240–1309هـ / 1824–1891م</div>
+        <p class="small mb-0">عادت من الرياض بقيادة الإمام تركي بن عبدالله، مع تطوير للتوافق القبلي والإدارة.</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- المملكة العربية السعودية (الثالثة) -->
+  <div class="col">
+    <a class="card card-hover h-100 text-decoration-none" href="{% url 'era_third' %}">
+      <img src="{% static 'history/images/eras/third-banner.jpg' %}" class="card-img-top hero-img" alt="المملكة العربية السعودية">
+      <div class="card-body">
+        <h3 class="h5 mb-1">المملكة العربية السعودية</h3>
+        <div class="text-muted small mb-2">1319هـ/1902م — حتى اليوم</div>
+        <p class="small mb-0">من استعادة الرياض إلى إعلان المملكة 1932 ثم النهضة الحديثة ورؤية 2030.</p>
+      </div>
+    </a>
+  </div>
+</div>
+{% endblock %}

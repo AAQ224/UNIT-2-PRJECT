@@ -1,0 +1,58 @@
+{% extends 'history/base.html' %}
+{% load static %}
+{% block body_class %}page-era{% endblock %}
+
+{% block title %}الإمام عبدالله بن فيصل — TheKingdom{% endblock %}
+{% block content %}
+<header class="mb-4 text-center">
+  <h1 class="text-success">الإمام عبدالله بن فيصل بن تركي</h1>
+  <p class="text-muted">تناوب الحكم في فترتين — (1282–1288هـ) و(1293–1305هـ)</p>
+</header>
+
+<div class="row g-4">
+  <div class="col-12 col-lg-4">
+    <div class="card h-100">
+      <div class="ratio ratio-1x1">
+        <img src="{% static 'history/images/rulers/abdullah-bin-faisal.jpg' %}" class="card-img-top object-fit-cover" alt="الإمام عبدالله بن فيصل">
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled small m-0">
+          <li><strong>اللقب:</strong> إمام الدولة السعودية الثانية</li>
+          <li><strong>العاصمة:</strong> الرياض</li>
+          <li><strong>السمات:</strong> صراع داخلي وتناوب سريع على الحكم</li>
+          <li><strong>الفترات:</strong> 1282–1288هـ و1293–1305هـ</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-8">
+    <section class="mb-4">
+      <h2 class="h5 mb-2">نبذة</h2>
+      <p>
+        واجه تحديات داخلية في البيت الحاكم ومنافسات مع قوى إقليمية،
+        ما أثّر على تماسك الدولة وفاعلية إدارتها في نهاية القرن الثالث عشر الهجري.
+      </p>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">محطات بارزة</h2>
+      <ul class="list-group">
+        <li class="list-group-item">تناوب الحكم مع أخيه سعود بن فيصل في فترات متقاربة.</li>
+        <li class="list-group-item">محاولات الحفاظ على نفوذ الدولة في العارض والقصيم.</li>
+        <li class="list-group-item">تزايد التدخلات الإقليمية وتراجع تماسك الإدارة.</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">الإرث والتأثير</h2>
+      <p>
+        عكست فترتاه حجم الضغوط على الدولة الثانية؛ وأسهمت الاضطرابات في إضعاف المركز
+        تمهيدًا لسقوطها لاحقًا ثم العودة في الدولة الثالثة على يد الملك عبدالعزيز.
+      </p>
+    </section>
+
+    <a href="{% url 'era_second' %}" class="btn btn-outline-success">← العودة إلى الدولة السعودية الثانية</a>
+  </div>
+</div>
+{% endblock %}

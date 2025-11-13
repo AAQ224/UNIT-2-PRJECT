@@ -1,0 +1,59 @@
+{% extends 'history/base.html' %}
+{% load static %}
+{% block body_class %}page-era{% endblock %}
+
+{% block title %}الإمام عبدالرحمن بن فيصل — TheKingdom{% endblock %}
+{% block content %}
+<header class="mb-4 text-center">
+  <h1 class="text-success">الإمام عبدالرحمن بن فيصل بن تركي</h1>
+  <p class="text-muted">آخر أئمة الدولة الثانية — (1291–1293هـ) و(1307–1309هـ)</p>
+</header>
+
+<div class="row g-4">
+  <div class="col-12 col-lg-4">
+    <div class="card h-100">
+      <div class="ratio ratio-1x1">
+        <img src="{% static 'history/images/rulers/abdulrahman-bin-faisal.jpg' %}" class="card-img-top object-fit-cover" alt="الإمام عبدالرحمن بن فيصل">
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled small m-0">
+          <li><strong>اللقب:</strong> آخر حكّام الدولة الثانية</li>
+          <li><strong>العاصمة:</strong> الرياض</li>
+          <li><strong>الصفة البارزة:</strong> والد الملك المؤسس عبدالعزيز</li>
+          <li><strong>الفترات:</strong> 1291–1293هـ و1307–1309هـ</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-8">
+    <section class="mb-4">
+      <h2 class="h5 mb-2">نبذة</h2>
+      <p>
+        تولّى الحكم في بيئة شديدة الاضطراب، ومع تصاعد نفوذ خصوم الدولة،
+        لتسقط الدولة الثانية عام 1309هـ/1891م، ثم يبدأ لاحقًا عهد جديد مع ابنه
+        الملك عبدالعزيز باستعادة الرياض عام 1902م وتأسيس الدولة الثالثة.
+      </p>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">محطات بارزة</h2>
+      <ul class="list-group">
+        <li class="list-group-item">محاولة إعادة تثبيت النفوذ في الرياض والعارض.</li>
+        <li class="list-group-item">مواجهات مع قوى إقليمية أنهكت موارد الدولة.</li>
+        <li class="list-group-item">خروج الأسرة ثم الإعداد لمرحلة العودة عبر الجيل الجديد.</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">الإرث والتأثير</h2>
+      <p>
+        رغم نهاية الدولة الثانية في عهده، فقد مثّلت رحلته الجسر التاريخي
+        لعودة الدولة السعودية في دورها الثالث بقيادة ابنه الملك عبدالعزيز.
+      </p>
+    </section>
+
+    <a href="{% url 'era_second' %}" class="btn btn-outline-success">← العودة إلى الدولة السعودية الثانية</a>
+  </div>
+</div>
+{% endblock %}

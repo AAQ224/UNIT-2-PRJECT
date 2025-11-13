@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}The Kingdom{% endblock %}</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="{% static 'history/css/styles.css' %}">
+  <!-- JsTimeLine -->
+  <script src="{% static 'history/js/timeline.js' %}"></script>
+</head>
+
+<body class="transition {% block body_class %}{% endblock %}">
+
+  <nav class="navbar navbar-expand-lg fixed-top border-bottom">
+    <div class="container-fluid px-3 px-md-5">
+      <a class="navbar-brand fw-bold fs-4" href="{% url 'home' %}">The Kingdom</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">الرئيسية</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">الدول السعودية</a>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item" href="{% url 'era_first' %}">الدولة السعودية الأولى</a></li>
+              <li><a class="dropdown-item" href="{% url 'era_second' %}">الدولة السعودية الثانية</a></li>
+              <li><a class="dropdown-item" href="{% url 'era_third' %}">المملكة العربية السعودية</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <button id="modeToggle" class="btn btn-outline-success btn-sm">
+          <i class="bi bi-brightness-high-fill" id="modeIcon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  {% block hero %}{% endblock %}
+
+  <main class="container py-5 px-md-5">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="border-top py-3 text-center text-muted small">
+    <p class="mb-0">© 2025 The Kingdom — مشروع عن تاريخ توحيد المملكة العربية السعودية</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const body = document.body, toggle = document.getElementById('modeToggle'), icon = document.getElementById('modeIcon');
+    if(localStorage.getItem('theme') === 'dark'){ body.classList.add('dark'); icon.classList.replace('bi-brightness-high-fill','bi-moon-stars-fill'); }
+    toggle.addEventListener('click', ()=>{ body.classList.toggle('dark'); const d=body.classList.contains('dark');
+      icon.classList.toggle('bi-moon-stars-fill', d); icon.classList.toggle('bi-brightness-high-fill', !d);
+      localStorage.setItem('theme', d ? 'dark' : 'light'); });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const v = document.querySelector('.hero__video');
+      const btn = document.getElementById('muteBtn');
+      if(!v || !btn) return;
+      const update = () => btn.textContent = v.muted ? 'تشغيل الصوت' : 'كتم الصوت';
+      v.muted = true; update();
+      btn.addEventListener('click', () => { v.muted = !v.muted; if (!v.muted) v.play().catch(()=>{}); update(); });
+    });
+  </script>
+
+  <script>
+    window.addEventListener("scroll", () => {
+      const nav = document.querySelector(".navbar");
+      if (window.scrollY > 60) nav.classList.add("scrolled"); else nav.classList.remove("scrolled");
+    });
+  </script>
+
+</body>
+</html>

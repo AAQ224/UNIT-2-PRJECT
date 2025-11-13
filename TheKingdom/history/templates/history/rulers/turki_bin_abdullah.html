@@ -1,0 +1,58 @@
+{% extends 'history/base.html' %}
+{% load static %}
+{% block body_class %}page-era{% endblock %}
+
+{% block title %}الإمام تركي بن عبدالله — TheKingdom{% endblock %}
+{% block content %}
+<header class="mb-4 text-center">
+  <h1 class="text-success">الإمام تركي بن عبدالله بن محمد بن سعود</h1>
+  <p class="text-muted">مؤسس الدولة السعودية الثانية — (1240–1249هـ / 1824–1834م)</p>
+</header>
+
+<div class="row g-4">
+  <div class="col-12 col-lg-4">
+    <div class="card h-100">
+      <div class="ratio ratio-1x1">
+        <img src="{% static 'history/images/rulers/turki-bin-abdullah.jpg' %}" class="card-img-top object-fit-cover" alt="الإمام تركي بن عبدالله">
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled small m-0">
+          <li><strong>اللقب:</strong> مؤسس الدولة الثانية</li>
+          <li><strong>العاصمة:</strong> الرياض</li>
+          <li><strong>السمات:</strong> إعادة البناء من قلب نجد</li>
+          <li><strong>الفترة:</strong> 1240–1249هـ / 1824–1834م</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-8">
+    <section class="mb-4">
+      <h2 class="h5 mb-2">نبذة</h2>
+      <p>
+        أعاد تكوين الدولة من الرياض بعد سقوط الدرعية، واستند إلى ولاء الأهالي وتماسك
+        الوسط النجدي، وبدأ بفرض الأمن وربط القرى والبوادي إداريًا بالعاصمة الجديدة.
+      </p>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">محطات بارزة</h2>
+      <ul class="list-group">
+        <li class="list-group-item">تحرير الرياض واتخاذها عاصمة بدلًا من الدرعية.</li>
+        <li class="list-group-item">تثبيت النفوذ في العارض واليمامة والأفلاج.</li>
+        <li class="list-group-item">إعادة تنشيط القضاء والإدارة والجباية لخدمة الأمن والاستقرار.</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">الإرث والتأثير</h2>
+      <p>
+        وضع الأساس الذي بُني عليه عهد ابنه الإمام فيصل بن تركي لاحقًا،
+        وأعاد للدولة مكانتها في وسط الجزيرة بعد دارسة الظروف الإقليمية الجديدة.
+      </p>
+    </section>
+
+    <a href="{% url 'era_second' %}" class="btn btn-outline-success">← العودة إلى الدولة السعودية الثانية</a>
+  </div>
+</div>
+{% endblock %}

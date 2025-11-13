@@ -1,0 +1,58 @@
+{% extends 'history/base.html' %}
+{% load static %}
+{% block body_class %}page-era{% endblock %}
+
+{% block title %}الإمام عبدالعزيز بن محمد — TheKingdom{% endblock %}
+{% block content %}
+<header class="mb-4 text-center">
+  <h1 class="text-success">الإمام عبدالعزيز بن محمد بن سعود</h1>
+  <p class="text-muted">ثاني أئمة الدولة الأولى — (1179–1218هـ / 1765–1803م)</p>
+</header>
+
+<div class="row g-4">
+  <div class="col-12 col-lg-4">
+    <div class="card h-100">
+      <div class="ratio ratio-1x1">
+        <img src="{% static 'history/images/rulers/abdulaziz-bin-muhammad.jpg' %}" class="card-img-top object-fit-cover" alt="الإمام عبدالعزيز بن محمد">
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled small m-0">
+          <li><strong>اللقب:</strong> إمام الدولة السعودية الأولى</li>
+          <li><strong>العاصمة:</strong> الدرعية</li>
+          <li><strong>السمات:</strong> التوحيد الإداري والتوسع المدروس</li>
+          <li><strong>الفترة:</strong> 1179–1218هـ / 1765–1803م</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-8">
+    <section class="mb-4">
+      <h2 class="h5 mb-2">نبذة</h2>
+      <p>
+        واصل الإمام عبدالعزيز نهج التوسّع وتوطيد الإدارة، وعمِل على توحيد مناطق واسعة من نجد
+        وربطها إداريًّا بالدرعية عبر قضاة وعُمّال وأعوان للدولة، ما عزّز الاستقرار والنفوذ الإقليمي.
+      </p>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">محطات بارزة</h2>
+      <ul class="list-group">
+        <li class="list-group-item">تعزيز الأمن في طرق القوافل بين الشرق والغرب.</li>
+        <li class="list-group-item">توسّع في اليمامة ونطاق نفوذ الدولة في وسط الجزيرة.</li>
+        <li class="list-group-item">نشر القضاء والإدارة في المناطق الملتحقة بالدولة الأولى.</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">الإرث والتأثير</h2>
+      <p>
+        مهّد لمرحلة اتّساع أكبر في عهد ابنه الإمام سعود، ورسّخ نموذج الإدارة المركزية المنضبطة
+        القائمة على القضاء والجباية المنظمة وحماية المصالح العامة.
+      </p>
+    </section>
+
+    <a href="{% url 'era_first' %}" class="btn btn-outline-success">← العودة إلى الدولة السعودية الأولى</a>
+  </div>
+</div>
+{% endblock %}

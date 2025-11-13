@@ -1,0 +1,56 @@
+{% extends 'history/base.html' %}
+{% load static %}
+{% block body_class %}page-era{% endblock %}
+
+{% block title %}خادم الحرمين الشريفين الملك سلمان بن عبدالعزيز — TheKingdom{% endblock %}
+{% block content %}
+<header class="mb-4 text-center">
+  <h1 class="text-success">خادم الحرمين الشريفين الملك سلمان بن عبدالعزيز</h1>
+  <p class="text-muted">رؤية 2030 والتحولات الكبرى — (ملكًا منذ 2015م)</p>
+</header>
+
+<div class="row g-4">
+  <div class="col-12 col-lg-4">
+    <div class="card h-100">
+      <div class="ratio ratio-1x1">
+        <img src="{% static 'history/images/rulers/king-salman.jpg' %}" class="card-img-top object-fit-cover" alt="الملك سلمان">
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled small m-0">
+          <li><strong>الفترة:</strong> 2015–حتى اليوم</li>
+          <li><strong>التركيز:</strong> رؤية 2030 وتنويع الاقتصاد</li>
+          <li><strong>العاصمة:</strong> الرياض</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-8">
+    <section class="mb-4">
+      <h2 class="h5 mb-2">نبذة</h2>
+      <p>
+        يشهد عهده إطلاق <strong>رؤية المملكة 2030</strong> لتنويع الاقتصاد وبناء قطاعات جديدة،
+        مع مشاريع كبرى مثل نيوم وذا لاين والقدية والبحر الأحمر، وتطوير الخدمات الرقمية وتمكين الشباب.
+      </p>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">محطات بارزة</h2>
+      <ul class="list-group">
+        <li class="list-group-item">تنمية قطاعات السياحة والثقافة والترفيه والرياضة واللوجستيات.</li>
+        <li class="list-group-item">مشاريع كبرى ذات أثر عالمي (نيوم، ذا لاين، القدية، البحر الأحمر).</li>
+        <li class="list-group-item">تحسين جودة الحياة والتحول الرقمي وتمكين رواد الأعمال.</li>
+      </ul>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="h5 mb-2">الإرث والتأثير</h2>
+      <p>
+        يقود تحولاً شاملاً في بنية الاقتصاد والمجتمع والخدمات، مع رؤية مستقبلية طموحة.
+      </p>
+    </section>
+
+    <a href="{% url 'era_third' %}" class="btn btn-outline-success">← العودة إلى صفحة المملكة العربية السعودية</a>
+  </div>
+</div>
+{% endblock %}
